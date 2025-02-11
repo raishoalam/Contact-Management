@@ -1,0 +1,11 @@
+CREATE DATABASE contact_management;
+USE contact_management;
+
+CREATE TABLE contacts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  phoneNumber VARCHAR(15) NOT NULL,
+  address TEXT,
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
